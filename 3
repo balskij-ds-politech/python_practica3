@@ -1,0 +1,9 @@
+number = int(input('Введите число: '))
+if (number % 5 != 0) and (number % 7 != 0):
+    print('00')
+if (number % 5 == 0) and (number % 7 != 0):
+    print('01')
+if (number % 5 != 0) and (number % 7 == 0):
+    print('10')
+if (number % 5 == 0) and (number % 7 == 0):
+    print('11')
