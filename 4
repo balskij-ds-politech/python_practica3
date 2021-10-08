@@ -1,0 +1,19 @@
+import math
+print('Есть квадратное уравнение вида ax^2+bx+c=0')
+a = int(input('Введите 1-ый коэффицент уравнения (a) не равный нулю: '))
+b = int(input('Введите 2-ой коэффицент уравнения (b): '))
+c = int(input('Введите 3-ий коэффицент уравнения (c): '))
+if a == 0:
+    square3 = (-c)/b
+    print('У уравнения есть 1 корень: ', square3)
+else:
+    discrim = b**2-4*a*c
+    if discrim > 0:
+        square1 = (-b+math.sqrt(discrim))/2*a
+        square2 = (-b-math.sqrt(discrim))/2*a
+        print('У уравнения есть 2 корня: ', square1, 'и ', square2)
+    if discrim == 0:
+        square1 = -b/(2*a)
+        print('У уравнения есть 1 корень: ', square1)
+    if discrim < 0:
+        print('Корней у уравнения не существует') 
